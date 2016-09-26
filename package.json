@@ -1,7 +1,7 @@
 {
     "//": "alias: JumanjiJS, angular-2-boilerplate, angular-library, angular-2-library, angular2-library, ng2-library, ng2-boilerplate",
     "name": "jumanjijs",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "description": "Angular-2 boilerplate",
     "main": "./dist/main.js",
     "dependencies": {
@@ -62,7 +62,7 @@
         "component": "cd src/system_templates/components && cp component.ts new.ts; mv new.ts ../../../src/ts/modules/components; cd ../../../src/ts/modules/components; mv new.ts ",
         "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
         "lite": "lite-server",
-        "postinstall": "cd ../../ && sudo mv node_modules/jumanjijs ./; cd jumanjijs && typings install",
+        "postinstall": "cd ../../ && sudo mv node_modules/jumanjijs ./; cd jumanjijs && sudo npm install; typings install",
         "tsc": "tsc",
         "tsc:w": "tsc -w"
     },
