@@ -2,13 +2,13 @@
 
 ### What is this repository for? ###
 
-Angular-2 Boilperplate code with task builder. 
+Angular-2 boilperplate code with gulp building your tasks, handling the transpilation of your typescript into javascript, compiling your sass into css, and starting a local web server at http://localhost:8000. 
 
 This library provides the basic building blocks for building Angular-2 applications transpiled from Transcript, complete with src and app scaffolding for components, directives, services, pipes, sass, javascript, and assets. 
 
-It also comes initialized with npm commands to easily build components, directives, services, and pipes through the command line. More on this later in the readme.
+It also comes initialized with npm commands to easily build components, directives, services, and pipes through the command line. More on that later in the readme.
 
-* 2.1.1
+* v2.1.4
     - now updated for the stable release of Angular 2.0.0!
 
 ### How do I get set up? ###
