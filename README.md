@@ -23,9 +23,11 @@ How? Download node from the homepage at https://nodejs.org/ or install node thro
 make sure you have node and npm installed
 ```
 node -v
+"version number"
 ```
 ```
 npm -v
+"version number"
 ```
 then
 ```
