@@ -1,9 +1,9 @@
 {
-  "name": "jumanjijs",
-  "version": "2.1.1",
-  "description": "Angular-2 boilerplate",
-  "main": "./dist/main.js",
-  "dependencies": {
+    "name": "jumanjijs",
+    "version": "2.1.2",
+    "description": "Angular-2 boilerplate",
+    "main": "./dist/main.js",
+    "dependencies": {
     "@angular/common": "2.0.0",
     "@angular/compiler": "2.0.0",
     "@angular/core": "2.0.0",
@@ -35,8 +35,8 @@
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.27",
     "zone.js": "^0.6.23"
-  },
-  "devDependencies": {
+    },
+    "devDependencies": {
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "es6-promise": "^3.2.1",
@@ -48,8 +48,8 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
-  },
-  "scripts": {
+    },
+    "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "typings": "typings",
     "deploy-sand": "git checkout sandbox; git push -u origin sandbox",
@@ -64,7 +64,17 @@
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
-  },
-  "author": "Rafay Choudhury",
-  "license": "ISC"
+    },
+    "author": "Rafay Choudhury",
+    "bugs": {
+      "url": "https://bitbucket.org/rafay826/jumanjijs/issues",
+      "email": "info@fywave.com"
+    },
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git@bitbucket.org:rafay826/jumanjijs.git"
+    },
+    "homepage": "https://bitbucket.org/rafay826/jumanjijs",
+    "keywords": ["angular 2", "angular library", "angular framework", "angular boilerplate", "beginning angular 2", "develop angular 2"]
 }
