@@ -8,7 +8,7 @@ This library provides the basic building blocks for building Angular-2 applicati
 
 It also comes initialized with npm commands to easily build components, directives, services, and pipes through the command line. More on that later in the readme.
 
-* v2.1.5
+* v2.2.0
     - now updated for the stable release of Angular 2.0.0!
 
 ### How do I get set up? ###
@@ -31,7 +31,7 @@ npm -v
 ```
 then
 ```
-sudo npm install gulp gulp-typescript typings
+sudo npm install -g gulp typescript typings
 ```
 
 ### App Installation and Getting Started ###
@@ -57,7 +57,7 @@ gulp
 
 ### What commands come with this library? ###
 
-All component, directives, services, and pipes that created from the script commands get automatically placed into it's respective typescript directory in the 'src' folder.
+All components, directives, services, and pipes that are created from the script commands get automatically placed into it's respective typescript directory in the 'src' folder.
 
 ### Creating new components: ###
 ```
