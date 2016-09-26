@@ -13,7 +13,27 @@ It also comes initialized with npm commands to easily build components, directiv
 
 ### How do I get set up? ###
 
-Install using npm or git:
+Prerequisites: node, gulp, typescript, typings.
+
+(skip these steps if you already have the prerequisites)
+
+If you don't have these installed, fetch 'em. 
+How? Download node from the homepage at https://nodejs.org/ or install node through Homebrew if you have it. 
+
+make sure you have node and npm installed
+```
+node -v
+```
+```
+npm -v
+```
+then
+```
+sudo npm install gulp gulp-typescript typings
+```
+
+### App Installation and Getting Started ###
+Install the package using npm or git:
 ```
 sudo npm i jumanjijs
 ```
