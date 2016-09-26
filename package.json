@@ -1,6 +1,6 @@
 {
     "name": "jumanjijs",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "description": "Angular-2 boilerplate",
     "main": "./dist/main.js",
     "dependencies": {
