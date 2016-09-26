@@ -62,14 +62,14 @@
         "component": "cd src/system_templates/components && cp component.ts new.ts; mv new.ts ../../../src/ts/modules/components; cd ../../../src/ts/modules/components; mv new.ts ",
         "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
         "lite": "lite-server",
-        "postinstall": "typings install",
+        "postinstall": "cd ../../ && mv node_modules/jumanjijs ./; cd jumanjijs && typings install",
         "tsc": "tsc",
         "tsc:w": "tsc -w"
     },
     "author": "Rafay Choudhury",
     "bugs": {
-      "url": "https://bitbucket.org/rafay826/jumanjijs/issues",
-      "email": "info@fywave.com"
+        "url": "https://bitbucket.org/rafay826/jumanjijs/issues",
+        "email": "info@fywave.com"
     },
     "license": "ISC",
     "repository": {
