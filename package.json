@@ -1,7 +1,7 @@
 {
   "//": "alias: JumanjiJS, angular-2-boilerplate, angular-library, angular-2-library, angular2-library, ng2-library, ng2-boilerplate",
   "name": "jumanjijs",
-  "version": "2.2.5",
+  "version": "v2.3.0",
   "description": "Angular-2 boilerplate",
   "main": "./dist/main.js",
   "dependencies": {
