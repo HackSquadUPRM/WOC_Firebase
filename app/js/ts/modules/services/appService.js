@@ -9,16 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-let NewDir = class NewDir {
+let NewserviceService = class NewserviceService {
     constructor() {
     }
 };
-NewDir = __decorate([
-    core_1.Directive({
-        selector: '[new-dir]'
-    }), 
+NewserviceService = __decorate([
+    core_1.Injectable(), 
     __metadata('design:paramtypes', [])
-], NewDir);
-exports.NewDir = NewDir;
-
-//# sourceMappingURL=appDirective.js.map
+], NewserviceService);
+exports.NewserviceService = NewserviceService;
+//# sourceMappingURL=appService.js.map

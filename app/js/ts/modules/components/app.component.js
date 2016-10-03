@@ -9,18 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-let AboutMeComponent = class AboutMeComponent {
+let AppComponent = class AppComponent {
     constructor() {
-        this.title = 'About This Framework';
+        this.title = 'Jumanji 2.0';
     }
 };
-AboutMeComponent = __decorate([
+AppComponent = __decorate([
     core_1.Component({
-        selector: 'about',
-        templateUrl: '../../../../templates/components/aboutMe.component.html'
+        selector: 'jumanji',
+        templateUrl: '../../../../templates/components/homeComponent.html'
     }), 
     __metadata('design:paramtypes', [])
-], AboutMeComponent);
-exports.AboutMeComponent = AboutMeComponent;
-
-//# sourceMappingURL=aboutMe.component.js.map
+], AppComponent);
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

@@ -18,5 +18,4 @@ NewserviceService = __decorate([
     __metadata('design:paramtypes', [])
 ], NewserviceService);
 exports.NewserviceService = NewserviceService;
-
-//# sourceMappingURL=appService.js.map
+//# sourceMappingURL=service.js.map

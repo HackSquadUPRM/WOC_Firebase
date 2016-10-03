@@ -8,7 +8,7 @@ This library provides the basic building blocks for building Angular-2 applicati
 
 It also comes initialized with npm commands to easily build components, directives, services, and pipes through the command line. More on that later in the readme.
 
-* v2.3.1
+* v2.3.3
     - now updated for the stable release of Angular 2.0.0!
 
 ### How do I get set up? ###

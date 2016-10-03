@@ -11,16 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 const core_1 = require('@angular/core');
 let AppComponent = class AppComponent {
     constructor() {
-        this.title = 'Jumanji 2.0';
+        this.title = 'app works!';
     }
 };
 AppComponent = __decorate([
     core_1.Component({
-        selector: 'jumanji',
-        templateUrl: '../../../../templates/components/homeComponent.html'
+        moduleId: module.id,
+        selector: 'app-root',
+        templateUrl: 'app.component.html',
+        styleUrls: ['app.component.css']
     }), 
     __metadata('design:paramtypes', [])
 ], AppComponent);
 exports.AppComponent = AppComponent;
-
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=component.js.map

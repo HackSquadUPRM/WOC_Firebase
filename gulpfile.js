@@ -25,19 +25,8 @@
         buffer,
         gutil,
         stream,
-        moduleTS,
-        bundleJS,
         copyDist,
-        typeBrowserRef,
-        compTS,
-        dirTS,
-        serveTS,
-        pipeTS,
-        dirJS,
-        serveJS,
-        pipeJS,
-        compJS,
-        appRoot;
+        typeBrowserRef
 
     //Instantiate Variables
         // Build CSS
@@ -48,40 +37,20 @@
         // Distribute CS, 
         distCss = 'app/css',
 
-        // Build J, 
+        // Build JS, 
         buildJs = 'src/js/*.js',
-        // Finished Concat + Minify J, 
+        
+        // Finished Concat + Minify JS, 
         finJs = 'final.js', 
-            minJs = 'final.min.js',
-        // Distribute J, 
+        minJs = 'final.min.js',
+        
+        // Distribute JS, 
         distMinJs = 'app/js/final.min.js', 
-        distJs = 'app/js/ux', 
-//        controllerJs = 'controller/*.js',
-
-        // TypeScript Module Locations
-        mainTS = 'src/ts/*.ts',
-        moduleTS = 'src/ts/modules/app.module.ts',
-        dirTS = 'src/ts/modules/directives/*.ts',
-        serveTS = 'src/ts/modules/services/*.ts',
-        pipeTS = 'src/ts/modules/pipes/*.ts',
-        compTS = 'src/ts/modules/components/*.ts',
-        
-        // TypeScript Transpilation Locations
-        dirJS = 'app/js/modules/directives',
-        serveJS = 'app/js/modules/services',
-        pipeJS = 'app/js/modules/pipes',
-        compJS = 'app/js/modules/components',
-        moduleJS = 'app/js/modules',
-        mainJS = 'app/js',
-        
-        // bundle.js name, 
-        bundleJS = 'bundle.js',
+        distJs = 'app/js/ux',
 
         // Angular 2 shims location, 
         copyDist = 'app/lib',
-
-        // Application Root, 
-        appRoot = "app",
+        
         typeBrowserRef = "node_modules/angular2/typings/browser.d.ts",
 
         // Include Our Plugin, 
@@ -99,18 +68,7 @@
         concat = require('gulp-concat'), 
         uglify = require('gulp-uglify'), 
         rename = require('gulp-rename'), 
-        prefix = require('gulp-autoprefixer'), 
-        server = require('gulp-server-livereload');
-
-    // Load web-server at localhost:8000
-    gulp.task('webserver', function() {
-      gulp.src('./')
-        .pipe(server({
-          livereload: true,
-          directoryListing: true,
-          open: true
-        }));
-    });
+        prefix = require('gulp-autoprefixer')
     
     // Copy Angular 2 shims to dist/lib
     gulp.task('copylibs', function() {
@@ -153,76 +111,13 @@
             .pipe(uglify())
             .pipe(gulp.dest(distJs));
     });
-    
-    //*** Typescript tasks for transpilation, sourcemaps, and tsconfig
-    
-    // All Typescript Files
-    gulp.task('typemodule', function () {
-      return gulp
-        .src([moduleTS, typeBrowserRef])
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(moduleJS));
-    });
-    
-    // All Typescript Components 
-    gulp.task('typemain', function () {
-      return gulp
-        .src([mainTS, typeBrowserRef])
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(mainJS));
-    });
-    
-    // All Typescript Components 
-    gulp.task('typecomp', function () {
-      return gulp
-        .src([compTS, typeBrowserRef])
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(compJS));
-    });
-    
-    // All Typescript Directives
-    gulp.task('typedir', function () {
-      return gulp
-        .src([dirTS, typeBrowserRef])
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(dirJS));
-    });
-    
-    // All Typescript Pipes
-    gulp.task('typepipe', function () {
-      return gulp
-        .src([pipeTS, typeBrowserRef])
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(pipeJS));
-    });
-    
-    // All Typescript Services
-    gulp.task('typeserve', function () {
-      return gulp
-        .src([serveTS, typeBrowserRef])
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(serveJS));
-    });
-    
+
     // Watch Files For Changes
     gulp.task('watch', function() {
         gulp.watch([buildJs, distMinJs], ['lint', 'scripts']);
         gulp.watch([buildCss, partialCss], ['sass']);
-        gulp.watch([compTS, dirTS, pipeTS, serveTS, moduleTS, mainTS], ['typemodule', 'typecomp', 'typedir', 'typepipe', 'typeserve', 'typemain']);
     });
 
-    gulp.task("default", ['lint', 'sass', 'typemodule', 'typemain', 'watch']);
+    gulp.task("default", ['lint', 'sass', 'watch']);
 
 }());
