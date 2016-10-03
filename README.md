@@ -8,7 +8,7 @@ This library provides the basic building blocks for building Angular-2 applicati
 
 It also comes initialized with npm commands to easily build components, directives, services, and pipes through the command line. More on that later in the readme.
 
-* v2.2.1
+* v2.3.0
     - now updated for the stable release of Angular 2.0.0!
 
 ### How do I get set up? ###
@@ -50,24 +50,36 @@ sudo npm install
 ```
 typings install
 ```
-Run the application, starting up http://localhost:8000
+Run the application, starting up http://localhost:3000
 ```
-gulp
+npm start
 ```
 
 ### What commands come with this library? ###
 
-All components, directives, services, and pipes that are created from the script commands get automatically placed into it's respective typescript directory in the 'src' folder.
+All components, directives, services, pipes, and respective templates that are created from the script commands get automatically placed into it's respective directory.
+
+all new Typescript files that get created through this CLI **must** end in .ts
+all new HTML templates that get created through this CLI **must** end in .html
 
 ### Creating new components: ###
 ```
 npm run component myComponent.ts
 ```
-all new files that get created **must** end in .ts
+
+### Creating new component templates: ###
+```
+npm run component-template myComponent.html
+```
 
 ### Creating new directives: ###
 ```
 npm run directive myDirective.ts
+```
+
+### Creating new directive templates: ###
+```
+npm run directive-template myDirective.html
 ```
 
 ### Creating new services: ###
