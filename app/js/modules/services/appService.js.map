@@ -1,0 +1,1 @@
+{"version":3,"sources":["appService.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,uBAA2B,eAAe,CAAC,CAAA;AAG3C;IAEE;IAAgB,CAAC;AAEnB,CAAC;AALD;IAAC,iBAAU,EAAE;;qBAAA;AACA,yBAAiB,oBAI7B,CAAA","file":"appService.js","sourcesContent":["import { Injectable } from '@angular/core';\n\n@Injectable()\nexport class NewserviceService {\n\n  constructor() { }\n\n}\n"],"sourceRoot":"/source/"}

@@ -10,6 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require('@angular/core');
 let AppComponent = class AppComponent {
+    constructor() {
+        this.title = 'Jumanji 2.0';
+    }
 };
 AppComponent = __decorate([
     core_1.Component({

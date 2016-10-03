@@ -9,24 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-const platform_browser_1 = require('@angular/platform-browser');
-const app_component_1 = require('./components/app.component');
-const aboutMe_component_1 = require('./components/aboutMe.component');
-const app_routing_1 = require('../app.routing');
-let AppModule = class AppModule {
+let NewpipePipe = class NewpipePipe {
+    transform(value, args) {
+        return null;
+    }
 };
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule,
-            app_routing_1.routing
-        ],
-        declarations: [app_component_1.AppComponent,
-            aboutMe_component_1.AboutMeComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
+NewpipePipe = __decorate([
+    core_1.Pipe({
+        name: 'newpipe'
     }), 
     __metadata('design:paramtypes', [])
-], AppModule);
-exports.AppModule = AppModule;
+], NewpipePipe);
+exports.NewpipePipe = NewpipePipe;
 
-//# sourceMappingURL=app.module.js.map
+//# sourceMappingURL=appPipe.js.map

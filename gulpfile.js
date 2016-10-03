@@ -59,7 +59,7 @@
 //        controllerJs = 'controller/*.js',
 
         // TypeScript Module Locations
-        mainTS = 'src/ts/main.ts',
+        mainTS = 'src/ts/*.ts',
         moduleTS = 'src/ts/modules/app.module.ts',
         dirTS = 'src/ts/modules/directives/*.ts',
         serveTS = 'src/ts/modules/services/*.ts',
@@ -223,6 +223,6 @@
         gulp.watch([compTS, dirTS, pipeTS, serveTS, moduleTS, mainTS], ['typemodule', 'typecomp', 'typedir', 'typepipe', 'typeserve', 'typemain']);
     });
 
-    gulp.task("default", ['lint', 'sass', 'webserver', 'typemodule', 'typemain', 'watch']);
+    gulp.task("default", ['lint', 'sass', 'typemodule', 'typemain', 'watch']);
 
 }());

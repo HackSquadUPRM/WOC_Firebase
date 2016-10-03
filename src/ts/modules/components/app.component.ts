@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: '../../../../templates/components/homeComponent.html'
 })
 
-export class AppComponent { }
+export class AppComponent { 
+    title = 'Jumanji 2.0';
+}
 
