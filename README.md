@@ -8,7 +8,7 @@ This library provides the basic building blocks for building Angular-2 applicati
 
 It also comes initialized with npm commands to easily build components, directives, services, and pipes through the command line. More on that later in the readme.
 
-* v2.3.3
+* v2.3.4
     - now updated for the stable release of Angular 2.0.0!
 
 ### How do I get set up? ###
@@ -35,6 +35,10 @@ sudo npm install -g gulp typescript typings
 ```
 
 ### App Installation and Getting Started ###
+Make sure you have a local package.json file in your project directory, if you don't, run this command and enter all the default values for now:
+```
+npm init
+```
 Install the package using npm or git:
 ```
 sudo npm i jumanjijs
@@ -43,7 +47,7 @@ or
 ```
 git clone git@bitbucket.org:rafay826/jumanjijs.git
 ```
-Change into your project directory and run the following command line installs
+Move the jumanjijs directory out of the "node_modules" directory in your project folder. Change into your project directory and run the following command line installs
 ```
 sudo npm install
 ```
